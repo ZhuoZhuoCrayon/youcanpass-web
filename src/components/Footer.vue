@@ -14,7 +14,7 @@
         <a class="footer-main-link" target="_blank" href="https://www.mysql.com/">数据库：MySQL</a>
         <a class="footer-main-link" target="_blank" href="https://cn.vuejs.org/">前端：Vue.js</a>
         <a class="footer-main-link" target="_blank" href="https://element.eleme.cn/2.0/#/zh-CN">网站快速成型工具：Element-UI</a>
-        <a class="footer-main-link" target="_blank" href="https://github.com/explore">版本管理：Git</a>
+        <a class="footer-main-link" target="_blank" href="https://git-scm.com/">版本管理：Git</a>
         <a class="footer-main-link" target="_blank" href="https://github.com/explore">远程仓库：GitHub</a>
       </div>
 
@@ -37,7 +37,7 @@
         <p>平台问题反馈：873217631@qq.com</p>
         <p>选课问题反馈：csse824@szu.edu.cn</p>
         <p style="border: solid 1px white;width: 275px">参与项目：右侧 GitHub / Wechat 联系</p>
-        <p>地址：中国 广东省 深圳市 南山区 深圳大学 南校区 计算机与软件学院</p>
+        <p>地址：中国 广东省 深圳市 南山区 深圳大学 沧海校区 计算机与软件学院</p>
       </div>
     </div>
   </div>
@@ -51,7 +51,10 @@
 
 <style lang="scss">
   .footer{
-    height: 200px;
+    /*解决缩放错位*/
+    min-height: 200px;
+    height: auto;
+    /*----------*/
     padding: 40px 120px;
     background: #303133;
     text-align: left;
