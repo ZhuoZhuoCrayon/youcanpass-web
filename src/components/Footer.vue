@@ -49,7 +49,7 @@
     }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   .footer{
     /*解决缩放错位*/
     min-height: 200px;

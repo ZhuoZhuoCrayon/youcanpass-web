@@ -1,5 +1,5 @@
 <template>
-  <div id="message-area">
+  <div id="message-area" style="min-height: 600px">
     <el-row v-for="(message,index) in messages" :key="index">
       <el-card class="box-card">
         <div slot="header" class="clearfix">
@@ -58,68 +58,15 @@
               "content": "当前处于前端搭建阶段",
               "realName": "admin"
             },
-            {
-              "id": 3,
-              "userId": 5,
-              "commitDate": "2020-04-02T12:47:48.000+0000",
-              "updateDate": "2020-04-02T12:47:48.000+0000",
-              "status": 1,
-              "title": "内测版发布公告",
-              "content": "当前处于前端搭建阶段",
-              "realName": "admin"
-            },
-            {
-              "id": 3,
-              "userId": 5,
-              "commitDate": "2020-04-02T12:47:48.000+0000",
-              "updateDate": "2020-04-02T12:47:48.000+0000",
-              "status": 1,
-              "title": "内测版发布公告",
-              "content": "当前处于前端搭建阶段",
-              "realName": "admin"
-            },
-            {
-              "id": 3,
-              "userId": 5,
-              "commitDate": "2020-04-02T12:47:48.000+0000",
-              "updateDate": "2020-04-02T12:47:48.000+0000",
-              "status": 1,
-              "title": "内测版发布公告",
-              "content": "当前处于前端搭建阶段",
-              "realName": "admin"
-            },
-            {
-              "id": 3,
-              "userId": 5,
-              "commitDate": "2020-04-02T12:47:48.000+0000",
-              "updateDate": "2020-04-02T12:47:48.000+0000",
-              "status": 1,
-              "title": "内测版发布公告",
-              "content": "当前处于前端搭建阶段",
-              "realName": "admin"
-            },
-            {
-              "id": 3,
-              "userId": 5,
-              "commitDate": "2020-04-02T12:47:48.000+0000",
-              "updateDate": "2020-04-02T12:47:48.000+0000",
-              "status": 1,
-              "title": "内测版发布公告",
-              "content": "当前处于前端搭建阶段",
-              "realName": "admin"
-            }
           ]
         }
       }
     }
 </script>
 
-<style lang="scss">
-  #message-area{
-    margin: 30px 10px 30px 30px;
-  }
+<style scoped lang="scss">
   .el-row {
-    margin: 15px;
+    margin: 35px 40px;
   }
   .text {
     font-size: 14px;
@@ -146,6 +93,6 @@
     }
   }
   .box-card {
-    width: 70%;
+    width: 900px;
   }
 </style>
