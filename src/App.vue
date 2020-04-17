@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <v-header></v-header>
-    <img src="./assets/logo.png">
-    <router-view/>
+    <you-header></you-header>
+    <div style="width: 100%">
+      <router-view style="min-height: 400px"></router-view>
+    </div>
+
+    <you-footer class="footer"></you-footer>
   </div>
 </template>
 
 <script>
-import header from 'components/Header';
+import header from './components/Header';
+import footer from './components/Footer';
 export default {
   name: 'App',
   components: {
-      'v-header': header
+    'you-header': header,
+    'you-footer': footer,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  #app {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    min-width: 1440px;
+  }
+  html,body,#app{
+    /*设置满屏，并且取消边框margin*/
+    height: 100%;
+    margin: 0;
+  }
+  /**
+  - No opportunity to enable
+  html {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(100%);
+  }
+  */
 </style>
