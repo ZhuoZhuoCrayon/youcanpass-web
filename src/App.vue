@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <you-header></you-header>
-    <div style="width: 100%">
-      <router-view style="min-height: 400px"></router-view>
+    <div style="min-height: 100%;min-width: 100%">
+      <router-view></router-view>
     </div>
 
     <you-footer class="footer"></you-footer>
@@ -27,7 +27,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    min-width: 1440px;
+    min-width: 1600px;
   }
   html,body,#app{
     /*设置满屏，并且取消边框margin*/

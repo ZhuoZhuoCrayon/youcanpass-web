@@ -13,7 +13,6 @@
           </div>
 
         </div>
-
         <div class="message-content">
           {{ message.content }}
         </div>

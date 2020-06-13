@@ -80,7 +80,7 @@
         console.log('register');
       },
       login(){
-        if(this.user.username === this.form.username && this.user.password == this.form.password){
+        if(this.user.username === this.form.username && this.user.password === this.form.password){
           this.$message.success('登录成功');
           this.user.isLogin = true;
           this.loginDialogVisible = false;
