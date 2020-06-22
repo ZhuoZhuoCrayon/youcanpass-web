@@ -84,7 +84,6 @@
     .footer-contact{
       display: inline-block;
       float: right;
-      margin-right: 200px;
       .footer-contact-title{
         margin: 0;
         font-size: 18px;
