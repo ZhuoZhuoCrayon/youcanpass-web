@@ -27,7 +27,6 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    min-width: 1600px;
   }
   html,body,#app{
     /*设置满屏，并且取消边框margin*/
