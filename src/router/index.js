@@ -1,16 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Message from '@/components/Message'
-
-Vue.use(Router)
+import HomePage from "@/view/HomePage";
+import ReviewsPage from "@/view/ReviewsPage";
+import CostPage from "@/view/CostPage";
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Message',
-      component: Message
-    }
+      path: '',
+      redirect: '/home',
+    },
+    {
+      path: '/home',
+      name: 'Homepage',
+      component: HomePage
+    },
+    {
+      path: '/reviews',
+      name: 'ReviewsPage',
+      component: ReviewsPage
+    },
+    {
+      path: '/cost',
+      name: 'costPage',
+      component: CostPage
+    },
   ]
 })
