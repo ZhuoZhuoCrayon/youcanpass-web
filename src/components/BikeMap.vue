@@ -1,17 +1,24 @@
 <template>
-  <div class="amap-wrapper">
-    <el-amap
-      class="amap-box"
-      :vid="'amap-vue'"
-      :zoom="mapSettings.zoom"
-      :center="mapSettings.center"
-    >
-      <el-amap-marker
-        v-for="(maker, index) in mapMarkers"
-        :key="index"
-        :position="maker"></el-amap-marker>
-    </el-amap>
+  <div class="map-main">
+    <div class="amap-wrapper">
+      <div id="title">
+        <h1>1k+ bikes,100+ stations,20+ shops</h1>
+        <h2>USE the map to find the bikes</h2>
+      </div>
+      <el-amap
+        class="amap-box"
+        :vid="'amap-vue'"
+        :zoom="mapSettings.zoom"
+        :center="mapSettings.center"
+      >
+        <el-amap-marker
+          v-for="(maker, index) in mapMarkers"
+          :key="index"
+          :position="maker"></el-amap-marker>
+      </el-amap>
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -39,9 +46,19 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .map-main{
+    width: auto;
+    min-height: 800px;
+  }
   .amap-wrapper {
     width: 100%;
-    height: 30vw;
+    height: 600px;
+    display: block;
+  }
+  #title {
+    text-align: center;
+    font-family: century gothic;
+    font-size: 35px;
   }
 </style>
