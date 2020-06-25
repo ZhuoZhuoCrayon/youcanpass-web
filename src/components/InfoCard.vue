@@ -2,6 +2,16 @@
   <div id="info-card">
     <el-card class="box-card" >
       <div slot="header" class="box-card-header">
+        <el-image v-if="id==='1'"
+          style="margin: 20px"
+          src="static/img/components/userinfo/userimage.jpg"
+          fit="fill"
+        ></el-image>
+        <el-image v-else
+                  style="margin: 20px"
+                  src="static/img/components/userinfo/admin.jpg"
+                  fit="fill"
+        ></el-image>
         <div id="real-name" style="font-size:24px;display: flex;margin-bottom: 10px">
           <!--
           <i class="el-icon-postcard"></i>
@@ -10,7 +20,7 @@
 
           <span id="role-info">
             <el-tag
-              v-for="(item,index) in loginInfo.roleNames"
+              v-for="item in loginInfo.roleNames"
               size="medium"
               effect="plain"
               style="margin-left: 10px">{{ item }}</el-tag>
@@ -42,33 +52,73 @@
 <script>
     export default {
       name: "InfoCard",
+      props: ["id"],
+      created() {
+        if (this.id === "2") {
+          this.loginInfo = this.adminInfo
+        }
+      },
       data() {
         return {
           loginInfo:{
-            "username": "2017151019",
-            "realName": "蔡晓鑫",
+            "username": "Cai-Crayon",
+            "realName": "Caixiaoxin",
             "roleNames": [
-              "学生",
-              "学生讲师"
+              "User",
+              "Annual membership"
             ],
             "departmentChains": {
               "id": 10,
               "departmentId": 7,
-              "name": "2017-软件工程01",
+              "name": "| Joined BikeSharing for 67 days",
               "type": 3,
               "status": 1,
               "departmentChildList": [
                 {
                   "id": 7,
                   "departmentId": 1,
-                  "name": "软件工程",
+                  "name": "Bike Card Vip",
                   "type": 2,
                   "status": 1,
                   "departmentChildList": [
                     {
                       "id": 1,
                       "departmentId": 0,
-                      "name": "计算机与软件学院",
+                      "name": "Shenzhen China",
+                      "type": 1,
+                      "status": 1,
+                      "departmentChildList": []
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          adminInfo:{
+            "username": "BikeSharing-Mark",
+            "realName": "Mark",
+            "roleNames": [
+              "CEO",
+              "Annual membership"
+            ],
+            "departmentChains": {
+              "id": 10,
+              "departmentId": 7,
+              "name": "| Joined BikeSharing for 600 days",
+              "type": 3,
+              "status": 1,
+              "departmentChildList": [
+                {
+                  "id": 7,
+                  "departmentId": 1,
+                  "name": "Founder",
+                  "type": 2,
+                  "status": 1,
+                  "departmentChildList": [
+                    {
+                      "id": 1,
+                      "departmentId": 0,
+                      "name": "Shenzhen China",
                       "type": 1,
                       "status": 1,
                       "departmentChildList": []
@@ -111,10 +161,5 @@
 
   .item {
     margin-bottom: 18px;
-  }
-
-  #info-card {
-    margin: 35px 40px;
-    width: 430px;
   }
 </style>
