@@ -14,7 +14,7 @@
       <el-submenu index="/user" v-else>
         <template slot="title">{{ user.name }}</template>
         <el-menu-item @click="gotoInfo">Info</el-menu-item>
-        <el-menu-item index="/logout">Logout</el-menu-item>
+        <el-menu-item @click="logout" index="/logout">Logout</el-menu-item>
       </el-submenu>
       <el-menu-item index="/guides">Guides</el-menu-item>
       <el-menu-item index="/cost">Cost</el-menu-item>
@@ -23,7 +23,7 @@
     </el-menu>
 
     <el-dialog
-      title="用户登录"
+      title="Login, Biker!"
       style="top: 10%"
       :visible.sync="loginDialogVisible"
       width="480px"
@@ -46,6 +46,26 @@
         </el-form-item>
       </el-form>
     </el-dialog>
+    <el-dialog
+      title="Join us"
+      style="top: 10%"
+      :visible.sync="registerDialogVisible"
+      width="480px"
+      center>
+      <el-form id="register-form" ref="form" :model="form" style="margin-bottom: 40px; margin-top: 20px">
+        <el-form-item>
+          <el-input v-model="form.username" placeholder="username"></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-input v-model="form.password" placeholder="password" show-password></el-input>
+        </el-form-item>
+        <el-form-item style="margin-top: 50px;margin-bottom: 0px">
+          <el-button style="width: 100%;min-height: 40px"
+                     type="primary"
+                     @click="login">Submit</el-button>
+        </el-form-item>
+      </el-form>
+    </el-dialog>
   </div>
 
 </template>
@@ -56,6 +76,7 @@
         activeIndex: '/home',
         activeIndex2: '/home',
         loginDialogVisible: false,
+        registerDialogVisible: false,
         user: {
           name: 'Caixiaoxin',
           id: '1',
@@ -91,17 +112,28 @@
         console.log('login');
       },
       register() {
-        //todo
+        this.loginDialogVisible = false;
+        this.registerDialogVisible = true;
         console.log('register');
       },
       login(){
-        if(this.user.username === this.form.username && this.user.password === this.form.password){
+        if((this.user.username === this.form.username && this.user.password === this.form.password) ||
+            (this.form.username === "Mark") && this.form.password === "123")
+        {
+          if (this.form.username === "Mark") {
+            this.user.name = "Mark";
+            this.user.id = 2;
+          }
           this.$message.success('Success');
           this.user.isLogin = true;
           this.loginDialogVisible = false;
         }else{
           this.$message.error('Error');
         }
+      },
+      logout() {
+        this.user.isLogin = false;
+        this.$router.push('/home')
       }
     },
     created() {
