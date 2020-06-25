@@ -2,24 +2,24 @@
   <div class="footer">
     <div class="container">
       <div class="footer-main">
-        <h4 class="footer-main-title">快捷访问</h4>
-        <a class="footer-main-link" target="_blank" href="http://www1.szu.edu.cn/szu.asp">深圳大学内部网</a>
-        <a class="footer-main-link" target="_blank" href="https://www.szu.edu.cn/">深圳大学官网</a>
-        <a class="footer-main-link" target="_blank" href="http://csse.szu.edu.cn/cn/index.html">深圳大学计算机与软件学院官网</a>
-        <a class="footer-main-link" target="_blank" href="https://www1.szu.edu.cn/board/">深圳大学公文通</a>
+        <h4 class="footer-main-title">Quick access</h4>
+        <a class="footer-main-link" target="_blank" href="http://www1.szu.edu.cn/szu.asp">Shenzhen University intranet</a>
+        <a class="footer-main-link" target="_blank" href="https://www.szu.edu.cn/">Shenzhen University official website</a>
+        <a class="footer-main-link" target="_blank" href="http://csse.szu.edu.cn/cn/index.html">Shenzhen University School of Computer and Software Official Website</a>
+        <a class="footer-main-link" target="_blank" href="https://www1.szu.edu.cn/board/">Shenzhen University Official Communication</a>
       </div>
       <div class="footer-main">
-        <h4 class="footer-main-title">开发相关</h4>
-        <a class="footer-main-link" target="_blank" href="https://spring.io/projects/spring-boot">后端框架：SpringBoot</a>
-        <a class="footer-main-link" target="_blank" href="https://www.mysql.com/">数据库：MySQL</a>
-        <a class="footer-main-link" target="_blank" href="https://cn.vuejs.org/">前端：Vue.js</a>
-        <a class="footer-main-link" target="_blank" href="https://element.eleme.cn/2.0/#/zh-CN">网站快速成型工具：Element-UI</a>
-        <a class="footer-main-link" target="_blank" href="https://git-scm.com/">版本管理：Git</a>
-        <a class="footer-main-link" target="_blank" href="https://github.com/explore">远程仓库：GitHub</a>
+        <h4 class="footer-main-title">Development related</h4>
+        <a class="footer-main-link" target="_blank" href="https://spring.io/projects/spring-boot">Back-end framework: SpringBoot</a>
+        <a class="footer-main-link" target="_blank" href="https://www.mysql.com/">Database: MySQL</a>
+        <a class="footer-main-link" target="_blank" href="https://cn.vuejs.org/">Frontend: Vue.js</a>
+        <a class="footer-main-link" target="_blank" href="https://element.eleme.cn/2.0/#/zh-CN">Website rapid prototyping tool: Element-UI</a>
+        <a class="footer-main-link" target="_blank" href="https://git-scm.com/">Version control: Git</a>
+        <a class="footer-main-link" target="_blank" href="https://github.com/explore">Remote: GitHub</a>
       </div>
 
       <div class="footer-contact">
-        <h4 class="footer-contact-title">YoucanPass v1.0</h4>
+        <h4 class="footer-contact-title">BikeSharing v1.0</h4>
         <a class="footer-contact-method" target="_blank" href="https://github.com/ZhuoZhuoCrayon/YoucanPass">
           <img src="static/icon/github.png" style="transform:scale(0.5)">
         </a>
@@ -33,11 +33,11 @@
         </el-tooltip>
       </div>
       <div class="footer-feedback">
-        <h4 class="footer-feedback-title">联系我们</h4>
-        <p>平台问题反馈：873217631@qq.com</p>
-        <p>选课问题反馈：csse824@szu.edu.cn</p>
-        <p style="border: solid 1px white;width: 275px">参与项目：右侧 GitHub / Wechat 联系</p>
-        <p>地址：中国 广东省 深圳市 南山区 深圳大学 沧海校区 计算机与软件学院</p>
+        <h4 class="footer-feedback-title">Contact us</h4>
+        <p>Platform feedback: 873217631@qq.com</p>
+        <p>Cycling feedback: csse824@szu.edu.cn</p>
+        <p style="border: solid 1px white;width: 275px">Copyright©2017151019 - Caixiaoxin</p>
+        <p>Address: Shenzhen University, Nanshan District, Shenzhen, Guangdong, China</p>
       </div>
     </div>
   </div>
