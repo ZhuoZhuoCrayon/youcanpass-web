@@ -4,7 +4,7 @@
       <el-col :span="14">
         <el-image
           style="margin: 20px"
-          src="static/img/components/introduction/5.jpg"
+          src="static/img/components/reviewform/reviewimg.jpg"
           fit="fill"
         ></el-image>
       </el-col>
